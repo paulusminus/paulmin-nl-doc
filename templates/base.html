@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl" data-theme="light">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/pico.css">
+  <link rel="stylesheet" href="/scss/pico.css">
+  <link rel="stylesheet" href="/docs/scss/pico.docs.css">
   <title>{% block title %}{% endblock title %}</title>
 </head>
 
@@ -12,8 +13,12 @@
   <nav class="container-fluid">
     <ul>
       <li><a href="https://www.paulmin.nl">Paul Min</a></li>
+      <li>{% block title_header %}{% endblock title_header %}</li>
     </ul>
     <ul>
+      <li>
+        <a href="/blog/">Blog</a>
+      </li>
       <li>
         <a href="https://hub.docker.com/u/paulusminus">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" height="16px">
@@ -31,16 +36,11 @@
       </li>
     </ul>
   </nav>
-  <header>
-  </header>
-  <main>
-    <div class="container">
-      {% block content %} {% endblock %}
+  <main id="docs" class="container">
+    <aside></aside>
+    <div role="document">
+        {% block content %}{% endblock %}
     </div>
   </main>
-  <footer>
-    {% block footer %}{% endblock %}
-  </footer>
 </body>
-
 </html>

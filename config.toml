@@ -3,11 +3,13 @@ base_url = "https://www.paulmin.nl"
 
 author = "Paul Min"
 
+default_language = "nl"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 [markdown]
 # Whether to do syntax highlighting

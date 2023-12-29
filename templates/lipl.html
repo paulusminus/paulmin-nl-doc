@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if page.toc %}
+<aside>
+  <ul>
+    <li>
+      <ul>
+        {% for h1 in page.toc %}
+        <li>
+          <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</aside>
+{% endif %}
+<div role="document">
+    <section>
+      {{ page.content | safe }}
+    </section>
+    <footer>
+      <hr>
+    </footer>
+  </div>
+{% endblock content %}
