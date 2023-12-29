@@ -1,0 +1,6 @@
+[workspace]
+members = ["crates/zola"]
+
+[profile.release]
+strip = true
+
