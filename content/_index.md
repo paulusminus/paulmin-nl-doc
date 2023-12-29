@@ -11,5 +11,9 @@ Budgetverantwoordelijken zijn dan ook in toenemende mate geïnteresseerd in Rust
 Programmeurs die gewend zijn met andere talen moeten vaak in het begin erg wennen aan de voor hun vreemde foutmeldingen.
 Pas na verloop van tijd wordt hen duidelijk hoe je het een programma het best kunt ontwikkelen in Rust.
 
+# Opensource
+
+# Gestructureerd, object georiënteerd of functioneel
+
 
 [rust]: https://www.rust-lang.org/
