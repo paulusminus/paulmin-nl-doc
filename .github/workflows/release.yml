@@ -14,7 +14,8 @@ jobs:
       contents: write
     steps:
     - uses: actions/checkout@v4
-    - uses: Swatinem/rust-cache@v2
+      with:
+        submodules: true
     - name: Generate website
       run: cargo build-site
     - name: Create tarball
