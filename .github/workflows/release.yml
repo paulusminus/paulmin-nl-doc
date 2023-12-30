@@ -1,0 +1,26 @@
+name: Release content
+
+on:
+  push:
+    tags: "v*.*.*"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: Swatinem/rust-cache@v2
+    - name: Generate website
+      run: cargo build-site
+    - name: Create tarball
+      run: tar -czf ../www.paulmin.nl.static.tar.gz .
+      working-directory: "public"
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "www.paulmin.nl.static.tar.gz"
+
