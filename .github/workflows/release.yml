@@ -19,7 +19,7 @@ jobs:
     - name: Generate website
       run: cargo build-site
     - name: Create tarball
-      run: tar -czf ../www.paulmin.nl.static.tar.gz .
+      run: tar -czf ../www.paulmin.nl.static.tar.gz --owner=0 --group=0 --no-same-owner --no-same-permissions .
       working-directory: "public"
     - uses: ncipollo/release-action@v1
       with:
