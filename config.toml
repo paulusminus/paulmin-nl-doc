@@ -5,6 +5,8 @@ author = "Paul Min"
 
 default_language = "nl"
 
+minify_html = true
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -19,3 +21,5 @@ highlight_code = true
 
 [extra]
 github = "https://www.github.com/paulusminus"
+docker = "https://hub.docker.com/u/paulusminus"
+main_site_url = "https://www.paulmin.nl"

@@ -1,0 +1,3 @@
+[alias]
+serve-site = "run --release --manifest-path crates/zola/Cargo.toml --bin zola -- serve"
+build-site = "run --release --manifest-path crates/zola/Cargo.toml --bin zola -- build"
