@@ -1,4 +1,5 @@
 +++
 title = "Blog"
-page_template = "blog-page.html"
+template = "blog.html"
+page_template = "blog_post.html"
 +++

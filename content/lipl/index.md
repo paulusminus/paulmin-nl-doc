@@ -60,9 +60,6 @@ Control is used to select a theme, black letters on a white screen or white lett
 
 Source code for the [flutter] and [slint] version is available on Github. I prefer using the slint version because you can run it on raspbian lite.
 
-[flutter]: https://www.github.com/paulusminus/lipl-display-flutter
-[slint]: https://www.github.com/paulusminus/lipl-display
-
 
 # Lipl Control
 
@@ -73,4 +70,9 @@ If the connection is established, you can use the play button to display parts o
 
 Flutter can also build a web app. This can be handy for people maintaining the data. Bluetooth connection are not possible though.
 
-[Source code for Lipl Control](https://www.github.com/paulusminus/lipl-control-flutter) can be found on Github.
+Source code for [lipl control] can be found on Github.
+
+
+[lipl control]: https://www.github.com/paulusminus/lipl-control
+[flutter]: https://www.github.com/paulusminus/lipl-display-flutter
+[slint]: https://www.github.com/paulusminus/lipl-display
