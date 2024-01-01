@@ -1,4 +1,4 @@
-name: Release content
+name: Build and publish to Docker Hub
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
         labels: |
           org.opencontainers.image.description=Http server serving paulmin.nl
           org.opencontainers.image.authors=Paul Min
-          org.opencontainers.image.source=https://github.com/paulusminus/www.paulmin.nl.static
+          org.opencontainers.image.source=https://github.com/paulusminus/paulmin-nl-doc
           org.opencontainers.image.licenses=MIT
         tags: |
             type=semver,pattern={{ version }}
