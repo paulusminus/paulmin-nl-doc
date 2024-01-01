@@ -5,7 +5,7 @@ author = "Paul Min"
 
 default_language = "nl"
 
-minify_html = true
+minify_html = false
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

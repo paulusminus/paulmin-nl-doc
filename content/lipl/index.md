@@ -13,9 +13,9 @@ When I was organizing sing-alongs with some friends I thought is was useful to d
 
 Lipl consist of three applications
 
-1. An application for storing the lyrics and playlists, called [Lipl Storage](#lipl-storage), accessible through a REST interface.
-2. An application for displaying part of a lyric on a screen, called [Lipl Display](#lipl-display).
-3. An application for maintaining the collection of lyrics and playlists, and selecting a lyric or playlist that should be displayed on a screen, called [Lipl Control](#lipl-control).
+1. An application for storing the lyrics and playlists, called Lipl [Storage], accessible through a REST interface.
+2. An application for displaying part of a lyric on a screen, called Lipl [Display].
+3. An application for maintaining the collection of lyrics and playlists, and selecting a lyric or playlist that should be displayed on a screen, called Lipl [Control].
 
 The first component is written in rust. It runs on a private virtual linux server accessible through the internet. It has a restful interface for creating, reading, updating and deleting of lyrics and playlists.
 
@@ -32,7 +32,7 @@ The sing-alongs are not at home. When I go to a sing-along I bring with me
 
 The Raspberry Pi gets connected to a display with the help of its HDMI connector. After booting the Pi advertises a Gatt Service.
 
-Lipl-control can listen for advertisements and connect to the Pi. When I choose Play on lipl-control the parts and status are written to Gatt Characteristics on lipl-display. Lipl control can also write to a characteric that controls font size and theme.
+Lipl-control can listen for advertisements and connect to the Pi. When I choose Play on lipl-control the current part and status are written to Gatt Characteristics on lipl-display. Lipl control can also write to a characteric that controls font size and theme.
 
 
 # Lipl Storage
@@ -68,7 +68,7 @@ If the device the application is running on has an Internet Connection, the appl
 On Android the application can establish a connection with Lipl Display. Lipl Display uses advertising so the device can be found.
 If the connection is established, you can use the play button to display parts of a lyric or playlist.
 
-Flutter can also build a web app. This can be handy for people maintaining the data. Bluetooth connection are not possible though.
+Flutter can also build a web app. Maintaining the data can be more conveniant on a desktop. Bluetooth connection are not possible though.
 
 Source code for [lipl control] can be found on Github.
 
@@ -76,3 +76,6 @@ Source code for [lipl control] can be found on Github.
 [lipl control]: https://www.github.com/paulusminus/lipl-control
 [flutter]: https://www.github.com/paulusminus/lipl-display-flutter
 [slint]: https://www.github.com/paulusminus/lipl-display
+[Control]: #lipl-control
+[Display]: #lipl-display
+[Storage]: #lipl-storage
