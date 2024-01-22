@@ -21,9 +21,9 @@
       <li>{% block title_header %}{% endblock title_header %}</li>
     </ul>
     <ul>
-      <li>
+      <!-- <li>
         <a href="/blog/">Blog</a>
-      </li>
+      </li> -->
       <li>
         <a href="{{ config.extra.docker | safe }}">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 18" height="16px" style="margin-bottom: 3px;">
@@ -42,7 +42,6 @@
     </ul>
   </nav>
   <main id="docs" class="container">
-    <aside></aside>
     <div role="document">
       <section id="start">
         {% block content %}{% endblock %}
