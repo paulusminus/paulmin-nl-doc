@@ -8,14 +8,21 @@ Linus Torvalds, de man die ooit begon met de ontwikkeling van de Linux kernel, g
 
 De broncode voor de programmeertaal [rust] is openbaar, net als bij de Linux kernel. Ook hier zijn commerciële bedrijven actief betrokken bij de ontwikkeling van de taal, de compiler en hulpmiddelen voor de ontwikkelaar.
 
-## Wat maken we met Rust?
+## Wat maken we met rust?
 
-De rust compiler kan uitvoerbare programma's en bibliotheken produceren voor verschillende besturingssystemen en / of processorarchitecturen. De compiler wordt eveneens gebruikt om Webassembly code te genereren die vooral uitgevoerd wordt door browsers.
+De rust compiler kan uitvoerbare programma's en bibliotheken produceren voor verschillende combinaties van besturingssystemen en processorarchitecturen. De compiler kan ook Webassembly code genereren die vooral uitgevoerd wordt door browsers.
 
 ## Hergebruik code
 
-Code wordt gebundeld in een crate. Crates kunnen gepubliceerd worden op [crates.io] waarna andere ontwikkelaars er gebruik van kunnen maken. Ontwikkelaars van crates bepalen zelf welke code aangeroepen kan worden en welke code alleen voor intern gebruik is.
+Broncode wordt gebundeld in een crate. Crates kunnen gepubliceerd worden op [crates.io]. Ontwikkelaars van crates bepalen zelf welke code aangeroepen kan worden en welke code alleen voor intern gebruik is.
 Een crate kan ook alleen lokaal beschikbaar zijn of gepubliceerd zijn op een systeem dat niet voor iedereen toegankelijk is. Een crate wordt gespecificeerd met een unieke naam en een versie.
+
+## Bouwen
+
+Een crate kan omgezet worden in uitvoerbare code door te compileren. Meestal wordt hiervoor cargo gebruikt.
+Een crate kan afhankelijk zijn van andere crates. Deze worden gedownload en meegecompileerd.
+Het einddresultaat is een bibliotheek of programma dat tijdens de uitvoering weer afhankelijk kan zijn
+van andere bibliotheken.
 
 
 [rust]: https://www.rust-lang.org/
