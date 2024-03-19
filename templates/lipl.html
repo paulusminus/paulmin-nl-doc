@@ -1,21 +1,16 @@
 {% extends "base.html" %}
 
-{% block content %}
+{% block links_extra %}
 {% if page.toc %}
-<aside>
-  <ul>
-    <li>
-      <ul>
-        {% for h1 in page.toc %}
-        <li>
-          <a href="#{{ h1.id | safe }}">{{ h1.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-    </li>
-  </ul>
-</aside>
+<select style="max-width: 170px; border-style: none; font-size: 0.8rem; padding: 0px" onchange="window.location.href = this.options[this.selectedIndex].value;">
+  {% for h1 in page.toc %}
+    <option value="#{{ h1.id | safe }}">{{ h1.title }}</option>
+  {% endfor %}
+  </select>
 {% endif %}
+{% endblock links_extra %}
+
+{% block content %}
 <div role="document">
     <section>
       {{ page.content | safe }}

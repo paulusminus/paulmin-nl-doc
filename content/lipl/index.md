@@ -68,7 +68,7 @@ If the device the application is running on has an Internet Connection, the appl
 On Android the application can establish a connection with Lipl Display. Lipl Display uses advertising so the device can be found.
 If the connection is established, you can use the play button to display parts of a lyric or playlist.
 
-Flutter can also build a web app. Maintaining the data can be more conveniant on a desktop. Bluetooth connection are not possible though.
+Flutter can also build a web app. Maintaining the data can be more conveniant on a desktop. Bluetooth connections are not possible though.
 
 Source code for [lipl control] can be found on Github.
 
